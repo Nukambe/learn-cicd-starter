@@ -35,7 +35,7 @@ func TestGetAPIKey(t *testing.T) {
 
 	t.Run("bearer", func(t *testing.T) {
 		_, err := GetAPIKey(header3)
-		if err != nil {
+		if err == nil {
 			t.Fatal("Expected an error")
 		}
 	})
