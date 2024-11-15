@@ -22,7 +22,7 @@ func TestGetAPIKey(t *testing.T) {
 		}
 		diff := cmp.Diff("1111111", got)
 		if diff != "" {
-			t.Fatalf(diff)
+			t.Fatal(diff)
 		}
 	})
 
